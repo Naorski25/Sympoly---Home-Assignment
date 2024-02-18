@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sympoly-client"
+version = "0.0.0alpha1"
+description = "virtual environment for our new client sympoly"
+authors = ["Naor Livshitz"]
+
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+fastapi = "^0.109.2"
+pydantic = "^2.6.1"
+beanie = "^1.25.0"
+uvicorn = "^0.27.1"
+python-multipart = "^0.0.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
